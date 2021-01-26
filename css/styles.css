@@ -1,0 +1,58 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 100%;
+}
+
+/*List One*/
+div:first-of-type * {
+	background-color: #333;
+}
+
+div:first-of-type li:first-of-type + li {
+	background: #93e2d5;
+}
+
+span {
+	color: #bed661;
+}
+
+h1[title] {
+	font-family: "Times New Roman", Georgia, Serif;
+}
+
+/*List Two*/
+div:nth-child(2) li:first-child {
+	background: #93e2d5;
+}
+
+div:nth-child(2) li:last-child {
+	background: #34dddd;
+}
+
+div:nth-child(2) li:nth-child(2) {
+	background: #89e894;
+}
+
+div:nth-child(2) li:nth-child(3),
+div:nth-child(2) li:nth-child(4) {
+	background: #bed661
+}
+
+/*List Three*/
+div:nth-child(3) li:nth-child(odd) {
+	background: #7af5f5;
+}
+
+div:nth-child(3) li::first-letter {
+	font-size: 2rem;
+	font-weight: 700;
+}
+
+div:nth-child(3) ol::first-line {
+	background: #93e3d5;
+}
+
+/*List Four*/
+div:nth-of-type(4) {
+	background: #34dddd;
+}
